@@ -1,6 +1,6 @@
 "use client";
 
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaAddressBook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 
 
@@ -44,7 +44,7 @@ const About = () => {
                             rel="noopener noreferrer"
                             className="px-4 py-2 rounded-md text-foreground font-medium hover:bg-opacity-80 transition"
                         >
-                           Resume
+                           <FaAddressBook/>
 
                        
                         </a>

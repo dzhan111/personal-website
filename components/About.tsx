@@ -1,6 +1,8 @@
 "use client";
 
-import { FaAddressBook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaAddressBook } from "react-icons/fa6";
+
 
 
 
@@ -42,7 +44,7 @@ const About = () => {
                             href="/DavidZhanResume.pdf" // Example: "/resume.pdf" if placed in `public`
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-4 py-2 rounded-md text-foreground font-medium hover:bg-opacity-80 transition"
+                            className="text-2xl text-foreground hover:text-opacity-80 transition"
                         >
                            <FaAddressBook/>
 

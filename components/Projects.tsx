@@ -41,21 +41,21 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div id="projects" className="container mx-auto p-6 text-center">
+    <div id="projects" className="container mx-auto p-6 text-center bg-background text-foreground">
       <h1 className="text-5xl font-bold py-20">My Projects</h1>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
-          <div key={index} className="bg-white shadow-lg rounded-lg p-6 flex flex-col h-full">
+          <div key={index} className="bg-card shadow-lg rounded-lg p-6 flex flex-col h-full text-card-foreground">
             <div className="flex-grow">
               <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
-              <p className="text-gray-600 mb-4">{project.description}</p>
+              <p className="mb-4">{project.description}</p>
               
               {/* Tech Stack Section */}
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.techStack.map((tech, idx) => (
                   <span
                     key={idx}
-                    className="px-3 py-1 text-sm font-medium bg-gray-200 text-gray-800 rounded-full"
+                    className="px-3 py-1 text-sm font-medium bg-muted text-muted-foreground rounded-full"
                   >
                     {tech}
                   </span>
@@ -70,7 +70,7 @@ export default function Projects() {
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+                  className="px-4 py-2 bg-blue-600 text-primary-foreground rounded-md hover:bg-opacity-80 transition"
                 >
                   GitHub
                 </a>
@@ -80,7 +80,7 @@ export default function Projects() {
                   href={project.liveDemo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition"
+                  className="px-4 py-2 bg-green-300 text-accent-foreground rounded-md hover:bg-opacity-80 transition"
                 >
                   Live Demo
                 </a>

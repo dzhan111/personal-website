@@ -9,39 +9,45 @@ const projects = [
     techStack: ["TypeScript", "Next.js", "Tailwind", "Convex", "Clerk"]
   },
   {
-    title: "Ngram POS tagger",
-    description: "A n-gram Hidden Markov Model part of speech tagger.",
-    githubLink: "https://github.com/username/project2",
-    techStack: ["Python"]
-  },
-  {
     title: "DavidDocs",
     description: "Real time collaboration environment with mentions + push notifications",
     liveDemo: "https://project3-demo.com",
-    githubLink: "https://github.com/username/project2",
+    githubLink: "https://github.com/dzhan111/DavidDocs",
     techStack: ["TypeScript", "Next.js", "Tailwind", "liveblocks", "Clerk"]
   },
+  
   {
     title: "Weasel",
-    description: "A Spotify song recommendation platform for discovering new artists",
-    githubLink: "https://github.com/username/project2",
+    description: "A Spotify song recommendation platform for discovering new artists (msg for access)",
+    githubLink: "https://github.com/junhyunpark0126/weasel",
     techStack: ["React", "Node.js", "MySQL", "AWS", "Neo4j"]
   },
   {
     title: "Instagram",
     description: "A clone of Instagram, complete with posting, commenting, following, and liking functions",
+    githubLink:"https://github.com/dzhan111/instagram",
     techStack: ["Flutter", "Firebase", "Dart"]
   },
   {
-    title: "Project 4",
-    description: "This is a description of Project 4.",
-    techStack: ["Django", "React", "SQLite"]
+    title: "ZetaMac Clone",
+    description: "A clone of the popular arithmetic game by ZetaMac",
+    liveDemo: "https://dzhan111.github.io/ZetaMac.github.io/", 
+    githubLink: "https://github.com/dzhan111/ZetaMac.github.io",
+    
+    techStack: ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    title: "Portfolio Website (WIP)",
+    description: "A test of Aceternity UI library and a placeholder for when I actually have a job",
+    liveDemo: "https://portfolio-wxdh.vercel.app/",
+    githubLink: "https://github.com/dzhan111/portfolio",
+    techStack: ["TypeScript", "Next.js", "Tailwind", "Clerk", "Sentry", ]
   },
 ];
 
 export default function Projects() {
   return (
-    <div id="projects" className="container mx-auto p-6 text-center bg-background text-foreground">
+    <div id="projects" className="relative container mx-auto p-6 text-center bg-background text-foreground">
       <h1 className="text-5xl font-bold py-20">My Projects</h1>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
@@ -80,7 +86,7 @@ export default function Projects() {
                   href={project.liveDemo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-green-300 text-accent-foreground rounded-md hover:bg-opacity-80 transition"
+                  className="px-4 py-2 bg-green-600 text-accent-foreground rounded-md hover:bg-opacity-80 transition"
                 >
                   Live Demo
                 </a>

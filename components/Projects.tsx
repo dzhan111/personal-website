@@ -11,7 +11,7 @@ const projects = [
   {
     title: "DavidDocs",
     description: "Real time collaboration environment with mentions + push notifications",
-    liveDemo: "https://project3-demo.com",
+    liveDemo: "https://david-docs.vercel.app/sign-in",
     githubLink: "https://github.com/dzhan111/DavidDocs",
     techStack: ["TypeScript", "Next.js", "Tailwind", "liveblocks", "Clerk"]
   },
@@ -98,7 +98,7 @@ export default function Projects() {
 
       <button
         className="mt-8 px-6 py-3 rounded-md bg-foreground text-background font-medium hover:bg-opacity-80 transition"
-        onClick={() => document.getElementById("hero")?.scrollIntoView({ behavior: "smooth" })}
+        onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
       >
         Back to Top
       </button>

@@ -10,7 +10,7 @@ const About = () => {
     return (
         <div id="about" className="flex flex-col items-center justify-center h-screen bg-background text-foreground p-6">
             <div className="max-w-xl text-left space-y-4 mx-40">
-                <h1 className="text-5xl font-bold">About me</h1>
+                <h1 className="text-5xl font-bold">Hi, I'm David.</h1>
                 <p className="text-lg py-10">
                     I am a junior at the University of Pennsylvania pursuing a Bachelor&apos;s in Computer Science with Minors in Math and Data Science.
                     <br />

@@ -12,7 +12,7 @@ const About = () => {
             <div className="max-w-xl text-left space-y-4 mx-40">
                 <h1 className="text-5xl font-bold">Hi, I&apos;m David.</h1>
                 <p className="text-lg py-10">
-                    I am a junior at the University of Pennsylvania pursuing a Bachelor&apos;s in Computer Science with Minors in Math and Data Science.
+                    I am a junior at the University of Pennsylvania pursuing a BSE, as well as a MSE, Computer Science along with Minors in Math and Data Science.
                     <br />
                     <br />
                     I&apos;m passionate about building solutions that are both efficient and user-centered. In the summer of 2024, I worked as a Software Engineering Intern for a UMD start-up called Ventoscity. I redesigned their entire mobile app using Flutter, incorporating a GPT-4-powered food analysis feature.

@@ -2,8 +2,15 @@
 
 const projects = [
   {
+    title: "DataLabeler",
+    description: "A dense captioning service for creating relevant and detailed captions for AI training data",
+    githubLink: "https://github.com/dzhan111/DataLabeler",
+    liveDemo: "https://data-labeler-ten.vercel.app/",
+    techStack: ["React", "Tailwind", "FastAPI", "Supabase", "MEGA", "AWS", "Render"]
+  },
+  {
     title: "Blip",
-    description: "A Short form audio platform for microlearning. \n PennApps XXV: Best Entertainment Hack",
+    description: "A Short form audio platform for microlearning. \n PennApps Hackathon XXV: Best Entertainment Hack",
     githubLink: "https://github.com/dzhan111/blipapp",
     liveDemo: "https://blipapp.vercel.app",
     techStack: ["TypeScript", "Next.js", "Tailwind", "Convex", "Clerk"]
@@ -20,6 +27,7 @@ const projects = [
     title: "Weasel",
     description: "A Spotify song recommendation platform for discovering new artists (msg for access)",
     githubLink: "https://github.com/junhyunpark0126/weasel",
+    liveDemo: "https://www.youtube.com/watch?v=ASowhSfDmdI",
     techStack: ["React", "Node.js", "MySQL", "AWS", "Neo4j"]
   },
   {

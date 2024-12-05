@@ -3,7 +3,7 @@
 const projects = [
   {
     title: "DataLabeler",
-    description: "A dense captioning service for creating relevant and detailed captions for AI training data",
+    description: "A dense captioning service for creating relevant and detailed captions for AI training data. (Enter any ID for live demo)",
     githubLink: "https://github.com/dzhan111/DataLabeler",
     liveDemo: "https://data-labeler-ten.vercel.app/",
     techStack: ["React", "Tailwind", "FastAPI", "Supabase", "MEGA", "AWS", "Render"]
@@ -36,6 +36,7 @@ const projects = [
     githubLink:"https://github.com/dzhan111/instagram",
     techStack: ["Flutter", "Firebase", "Dart"]
   },
+  
   {
     title: "ZetaMac Clone",
     description: "A clone of the popular arithmetic game by ZetaMac",

@@ -1,19 +1,23 @@
 "use client";
 
+import { FaGithub } from "react-icons/fa";
+import { MdOutlineLiveTv } from "react-icons/md";
+
+
 const projects = [
   {
-  title: "Stephen AI Smith",
-  description: "A real time autozooming + autocommentating camera man. Autozooms from any sports livestream link, commentates in voice of Stephen A. Smith",
-  githubLink: "https://github.com/dzhan111/DataLabeler",
-  liveDemo: "https://data-labeler-ten.vercel.app/",
-  techStack: ["React", "Tailwind","Supabase", "FastAPI", "OpenAI", "Gemini", "OpenCV"]
+    title: "Stephen AI Smith",
+    description: "A real time autozooming + autocommentating camera man. Autozooms from any sports livestream link, commentates in voice of Stephen A. Smith",
+    githubLink: "https://github.com/dzhan111/DataLabeler",
+    liveDemo: "https://data-labeler-ten.vercel.app/",
+    techStack: ["React", "Tailwind", "Supabase", "FastAPI", "OpenAI", "Gemini", "OpenCV"]
   },
   {
     title: "DataLabeler",
     description: "A dense captioning service for creating relevant and detailed captions for AI training data. (Enter any ID for live demo)",
     githubLink: "https://github.com/dzhan111/DataLabeler",
     liveDemo: "https://data-labeler-ten.vercel.app/",
-    techStack: ["React", "Tailwind", "FastAPI", "Supabase","LemonFox.ai","MEGA", "AWS", "Render"]
+    techStack: ["React", "Tailwind", "FastAPI", "Supabase", "LemonFox.ai", "MEGA", "AWS", "Render"]
   },
   {
     title: "Blip",
@@ -29,7 +33,7 @@ const projects = [
     githubLink: "https://github.com/dzhan111/DavidDocs",
     techStack: ["TypeScript", "Next.js", "Tailwind", "liveblocks", "Clerk"]
   },
-  
+
   {
     title: "Weasel",
     description: "A Spotify song recommendation platform for discovering new artists (msg for access)",
@@ -40,16 +44,16 @@ const projects = [
   {
     title: "Instagram",
     description: "A clone of Instagram, complete with posting, commenting, following, and liking functions",
-    githubLink:"https://github.com/dzhan111/instagram",
+    githubLink: "https://github.com/dzhan111/instagram",
     techStack: ["Flutter", "Firebase", "Dart"]
   },
-  
+
   {
     title: "ZetaMac Clone",
     description: "A clone of the popular arithmetic game by ZetaMac",
-    liveDemo: "https://dzhan111.github.io/ZetaMac.github.io/", 
+    liveDemo: "https://dzhan111.github.io/ZetaMac.github.io/",
     githubLink: "https://github.com/dzhan111/ZetaMac.github.io",
-    
+
     techStack: ["HTML", "CSS", "JavaScript"]
   },
   {
@@ -57,7 +61,7 @@ const projects = [
     description: "A test of Aceternity UI library and a placeholder for when I actually have a job",
     liveDemo: "https://portfolio-wxdh.vercel.app/",
     githubLink: "https://github.com/dzhan111/portfolio",
-    techStack: ["TypeScript", "Next.js", "Tailwind", "Clerk", "Sentry", ]
+    techStack: ["TypeScript", "Next.js", "Tailwind", "Clerk", "Sentry",]
   },
 ];
 
@@ -71,7 +75,7 @@ export default function Projects() {
             <div className="flex-grow">
               <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
               <p className="mb-4">{project.description}</p>
-              
+
               {/* Tech Stack Section */}
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.techStack.map((tech, idx) => (
@@ -86,15 +90,15 @@ export default function Projects() {
             </div>
 
             {/* Links Section */}
-            <div className="flex gap-4 mt-auto">
+            <div className="flex gap-4 mt-auto py-4">
               {project.githubLink && (
                 <a
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-blue-600 text-primary-foreground rounded-md hover:bg-opacity-80 transition"
+                  className="text-primary hover:text-primary-foreground transition"
                 >
-                  GitHub
+                  <FaGithub className="text-2xl" />
                 </a>
               )}
               {project.liveDemo && (
@@ -102,12 +106,15 @@ export default function Projects() {
                   href={project.liveDemo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-green-600 text-accent-foreground rounded-md hover:bg-opacity-80 transition"
+                  className="text-primary hover:text-primary-foreground transition"
                 >
-                  Live Demo
+                  <MdOutlineLiveTv className="text-2xl" />
+                  
+
                 </a>
               )}
             </div>
+
           </div>
         ))}
       </div>

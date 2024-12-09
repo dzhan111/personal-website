@@ -1,8 +1,7 @@
 "use client"
 import { useEffect, useState } from "react";
-import { FaMoon } from "react-icons/fa";
 
-import { FaRegMoon } from "react-icons/fa";
+import Toggle from "./Toggle";
 
 
 export default function Hero() {
@@ -41,14 +40,7 @@ export default function Hero() {
           </button>
 
           {/* Theme toggle button */}
-          <button
-            onClick={toggleTheme}
-            className="px-6  py-3 rounded-md bg-primary-foreground border-card-foreground text-primary font-medium hover:bg-opacity-80 transition"
-          >
-            {isDarkMode ? <FaRegMoon />
- : <FaMoon />
-}
-          </button>
+          <Toggle></Toggle>
         </div>
       </div>
     </div>

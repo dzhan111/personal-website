@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaAddressBook } from "react-icons/fa6";
 
@@ -25,12 +26,14 @@ const About = () => {
                 </p>
 
                 <div className="flex items-center gap-4">
-                    <button
-                        className="px-6 py-3 rounded-md bg-foreground text-background font-medium hover:bg-opacity-80 transition"
-                        onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
-                    >
-                        See my projects
-                    </button>
+                    <Link href="/projects">
+                        <button
+                            className="px-6 py-3 rounded-md bg-foreground text-background font-medium hover:bg-opacity-80 transition"
+                            onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
+                        >
+                            See my projects
+                        </button>
+                    </Link>
 
                     {/* Social Media Icons */}
                     <div className="flex items-center gap-4">

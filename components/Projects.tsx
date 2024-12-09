@@ -121,7 +121,7 @@ export default function Projects() {
 
       <button
         className="mt-8 px-6 py-3 rounded-md bg-foreground text-background font-medium hover:bg-opacity-80 transition"
-        onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
+        onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
       >
         Back to Top
       </button>

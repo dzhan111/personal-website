@@ -2,11 +2,18 @@
 
 const projects = [
   {
+  title: "Stephen AI Smith",
+  description: "A real time autozooming + autocommentating camera man. Autozooms from any sports livestream link, commentates in voice of Stephen A. Smith",
+  githubLink: "https://github.com/dzhan111/DataLabeler",
+  liveDemo: "https://data-labeler-ten.vercel.app/",
+  techStack: ["React", "Tailwind","Supabase", "FastAPI", "OpenAI", "Gemini", "OpenCV"]
+  },
+  {
     title: "DataLabeler",
     description: "A dense captioning service for creating relevant and detailed captions for AI training data. (Enter any ID for live demo)",
     githubLink: "https://github.com/dzhan111/DataLabeler",
     liveDemo: "https://data-labeler-ten.vercel.app/",
-    techStack: ["React", "Tailwind", "FastAPI", "Supabase", "MEGA", "AWS", "Render"]
+    techStack: ["React", "Tailwind", "FastAPI", "Supabase","LemonFox.ai","MEGA", "AWS", "Render"]
   },
   {
     title: "Blip",

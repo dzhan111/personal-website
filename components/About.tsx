@@ -16,13 +16,14 @@ const About = () => {
                     I am a junior at the University of Pennsylvania pursuing a BSE, as well as a MSE, in Computer Science along with Minors in Math and Data Science.
                     <br />
                     <br />
-                    I&apos;m passionate about building solutions that are both efficient and user-centered. In the summer of 2024, I worked as a Software Engineering Intern for a UMD start-up called Ventoscity. I redesigned their entire mobile app using Flutter, incorporating a AI-powered food analysis feature.
+                    In the summer of 2024, I worked as a Software Engineering Intern for a UMD gut health start-up called Ventoscity. 
                     <br />
                     <br />
-                    During my time at school, I also work part-time as a Frontend Software Engineer for keep.id, a startup with the goal of providing proper identification for the homeless.
+                    At school, I work as a multivariable calculus TA and am a member of the Software team for Penn Aerial Robotics. I am also stepping into another role as a 
+                    mobile developer for an up and coming NIL startup this December. 
                     <br />
                     <br />
-                    Outside of academics, I enjoy playing sports like soccer, basketball, and tennis.
+                    My interests include ML, SWE and mobile dev. Outside of academics, I enjoy playing sports like soccer, basketball, and tennis. Check out my socials and resume below. 
                 </p>
 
                 <div className="flex items-center gap-4">

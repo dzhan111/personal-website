@@ -24,7 +24,7 @@ const projects = [
     description: "A Short form audio platform for microlearning. \n PennApps Hackathon XXV: Best Entertainment Hack",
     githubLink: "https://github.com/dzhan111/blipapp",
     liveDemo: "https://blipapp.vercel.app",
-    techStack: ["TypeScript", "Next.js", "Tailwind", "Convex", "Clerk"]
+    techStack: ["TypeScript", "Next.js", "Tailwind", "Convex", "Clerk", "Whisper", "Cerebras"]
   },
   {
     title: "DavidDocs",
@@ -39,7 +39,7 @@ const projects = [
     description: "A Spotify song recommendation platform for discovering new artists (msg for access)",
     githubLink: "https://github.com/junhyunpark0126/weasel",
     liveDemo: "https://www.youtube.com/watch?v=ASowhSfDmdI",
-    techStack: ["React", "Node.js", "MySQL", "AWS", "Neo4j"]
+    techStack: ["React", "Express", "MySQL", "AWS", "Neo4j"]
   },
   {
     title: "Instagram",

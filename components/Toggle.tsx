@@ -1,30 +1,31 @@
-import { applySavedTheme, toggleTheme } from '@/lib/utils';
+"use client";
+
+import { useTheme } from 'next-themes'; // Import useTheme hook
 import { useEffect, useState } from 'react';
 import { FaMoon, FaRegMoon } from 'react-icons/fa';
 
 const Toggle = () => {
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    const { theme, setTheme, resolvedTheme } = useTheme();
+    const [mounted, setMounted] = useState(false); // To prevent mismatch on server-side render
 
-    useEffect(() => {
-        // Apply the saved theme on initial load
-        const darkModeEnabled = applySavedTheme();
-        setIsDarkMode(darkModeEnabled);
-    }, []);
+    // Ensure this only runs on the client (to avoid SSR mismatch)
+    useEffect(() => setMounted(true), []);
 
     const handleToggleTheme = () => {
-        const newThemeState = toggleTheme();
-        setIsDarkMode(newThemeState);
+        const newTheme = resolvedTheme === 'dark' ? 'light' : 'dark';
+        setTheme(newTheme);
     };
+
+    if (!mounted) return null; // Wait until the app has mounted before displaying the toggle
+
     return (
-        <button
-            onClick={handleToggleTheme}
-            className="px-6  py-3 rounded-md bg-primary-foreground border-card-foreground text-primary font-medium hover:bg-opacity-80 transition"
+        <button 
+            onClick={handleToggleTheme} 
+            className="px-6 py-3 rounded-md bg-primary-foreground border-card-foreground text-primary font-medium hover:bg-opacity-80 transition"
         >
-            {isDarkMode ? <FaRegMoon />
-                : <FaMoon />
-            }
+            {resolvedTheme === 'dark' ? <FaRegMoon /> : <FaMoon />}
         </button>
-    )
+    );
 }
 
-export default Toggle
+export default Toggle;

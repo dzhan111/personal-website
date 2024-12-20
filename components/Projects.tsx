@@ -2,9 +2,15 @@
 
 import { FaGithub } from "react-icons/fa";
 import { MdOutlineLiveTv } from "react-icons/md";
-
+//https://youtu.be/ZiOawvAcxjk
 
 const projects = [
+  {
+    title: "Fine-tuned Sentiment Analysis Model",
+    description: "LSTM Regressor trained on reviews from RateMyProfessor.com. Fine-tuned with data augmentation(synonym replacement, back-translation)",
+    githubLink: "https://github.com/dzhan111/Finetuning-Sentiment-Analysis-Models",
+    techStack: ["numpy", "pandas", "scikit-learn"]
+  },
   {
     title: "Stephen AI Smith",
     description: "A real time autozooming + autocommentating camera man. Autozooms from any sports livestream link, commentates in voice of Stephen A. Smith",

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaAddressBook } from "react-icons/fa6";
 
@@ -8,6 +9,18 @@ import { FaAddressBook } from "react-icons/fa6";
 
 
 const About = () => {
+    const [resumeType, setResumeType] = useState('');
+
+    useEffect(() => {
+        // Randomly choose between SWE and DS resume (50/50 chance)
+        const randomChoice = Math.random() < 0.5 ? 'SWE' : 'DS';
+        setResumeType(randomChoice);
+    }, []);
+
+    const resumeLink = resumeType === 'SWE' 
+        ? '/DavidZhanResumeSWE.pdf' 
+        : '/DavidZhanResumeDS.pdf';
+
     return (
         <div id="about" className="flex flex-col items-center justify-center h-screen bg-background text-foreground p-6">
             <div className="max-w-xl text-left space-y-4 mx-40">
@@ -45,7 +58,7 @@ const About = () => {
                             <FaGithub />
                         </a>
                         <a
-                            href="/DavidZhanResume.pdf" // Example: "/resume.pdf" if placed in `public`
+                            href={resumeLink} // Example: "/resume.pdf" if placed in `public`
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-2xl text-foreground hover:text-opacity-80 transition"

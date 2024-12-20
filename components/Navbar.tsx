@@ -33,7 +33,7 @@ const Navbar = () => {
                     
                     </ul>
                     {/* Theme Toggle Button */}
-                    <div className='px-4'>
+                    <div className='pl-4'>
                         {/* Import your Toggle component here */}
                         <Toggle />
                     </div>

@@ -14,6 +14,7 @@ const Toggle = () => {
     const handleToggleTheme = () => {
         const newTheme = resolvedTheme === 'dark' ? 'light' : 'dark';
         setTheme(newTheme);
+        console.log(theme)
     };
 
     if (!mounted) return null; // Wait until the app has mounted before displaying the toggle

@@ -9,13 +9,14 @@ const projects = [
     title: "Fine-tuned Sentiment Analysis Model",
     description: "LSTM Regressor trained on reviews from RateMyProfessor.com. Fine-tuned with data augmentation(synonym replacement, back-translation)",
     githubLink: "https://github.com/dzhan111/Finetuning-Sentiment-Analysis-Models",
+    liveDemo: "https://youtu.be/ZiOawvAcxjk",
     techStack: ["numpy", "pandas", "scikit-learn"]
   },
   {
     title: "Stephen AI Smith",
     description: "A real time autozooming + autocommentating camera man. Autozooms from any sports livestream link, commentates in voice of Stephen A. Smith",
-    githubLink: "https://github.com/dzhan111/DataLabeler",
-    liveDemo: "https://data-labeler-ten.vercel.app/",
+    githubLink: "https://github.com/ezou626/cis5810finalproject",
+    liveDemo: "https://youtu.be/lyDe1qwi74Q",
     techStack: ["React", "Tailwind", "Supabase", "FastAPI", "OpenAI", "Gemini", "OpenCV"]
   },
   {

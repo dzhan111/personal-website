@@ -22,7 +22,7 @@ const Toggle = () => {
     return (
         <button 
             onClick={handleToggleTheme} 
-            className="px-6 py-3 rounded-md bg-primary-foreground border-card-foreground text-primary font-medium hover:bg-opacity-80 transition"
+            className="px-6 py-3 rounded-md bg-primary-foreground  text-primary font-medium hover:bg-opacity-80 transition"
         >
             {resolvedTheme === 'dark' ? <FaRegMoon /> : <FaMoon />}
         </button>

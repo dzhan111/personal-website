@@ -55,8 +55,8 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/other" className="hover:text-secondary transition">
-                                Other
+                            <Link href="/soccer" className="hover:text-secondary transition">
+                                Soccer
                             </Link>
                         </li>
                     </ul>

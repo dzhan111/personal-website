@@ -10,7 +10,7 @@ const Contact = () => {
         {/* Header Section */}
         <h1 className="text-4xl sm:text-5xl font-bold">Get in Touch</h1>
         <p className="text-base sm:text-lg md:text-xl leading-relaxed">
-          Whether you're looking to collaborate, have a project in mind, or just want to say hi, feel free to reach out! Below are my socials and links to my resume.
+          Whether you are looking to collaborate, have a project in mind, or just want to say hi, feel free to reach out! Below are my socials and links to my resume.
         </p>
 
         {/* Social Media Links */}

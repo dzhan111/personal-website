@@ -1,23 +1,22 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaAddressBook } from "react-icons/fa6";
+import { MdOutlineEmail } from "react-icons/md";
 
 const About = () => {
     const [resumeType, setResumeType] = useState("");
 
-    useEffect(() => {
-        // Randomly choose between SWE and DS resume (50/50 chance)
-        const randomChoice = Math.random() < 0.5 ? "SWE" : "DS";
-        setResumeType(randomChoice);
-    }, []);
+    // useEffect(() => {
+    //     // Randomly choose between SWE and DS resume (50/50 chance)
+    //     const randomChoice = Math.random() < 0.5 ? "SWE" : "DS";
+    //     setResumeType(randomChoice);
+    // }, []);
 
-    const resumeLink =
-        resumeType === "SWE"
-            ? "/DavidZhanResumeSWE.pdf"
-            : "/DavidZhanResumeDS.pdf";
+    const resumeLink = "/DavidZhanResumeSWE.pdf";
+
 
     return (
         <div
@@ -80,6 +79,12 @@ const About = () => {
                             className="text-xl sm:text-2xl text-foreground hover:text-opacity-80 transition"
                         >
                             <FaGithub />
+                        </a>
+                        <a
+                            href="mailto:dazhan@sas.upenn.edu"
+                            className="text-xl sm:text-2xl text-foreground hover:text-opacity-80 transition"
+                        >
+                            <MdOutlineEmail />
                         </a>
                         <a
                             href={resumeLink} // Example: "/resume.pdf" if placed in `public`

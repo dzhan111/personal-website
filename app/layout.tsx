@@ -32,6 +32,7 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="system">
           <Navbar />
+          
           <main className="py-4">{children}</main>
         </ThemeProvider>
         

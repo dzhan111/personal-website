@@ -2,6 +2,8 @@
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaAddressBook } from "react-icons/fa6";
+import { MdOutlineEmail } from "react-icons/md";
+
 
 const Contact = () => {
   return (
@@ -10,7 +12,7 @@ const Contact = () => {
         {/* Header Section */}
         <h1 className="text-4xl sm:text-5xl font-bold">Get in Touch</h1>
         <p className="text-base sm:text-lg md:text-xl leading-relaxed">
-          Whether you are looking to collaborate, have a project in mind, or just want to say hi, feel free to reach out! Below are my socials and links to my resume.
+         Below are my socials and resume!
         </p>
 
         {/* Social Media Links */}
@@ -32,6 +34,12 @@ const Contact = () => {
             <FaGithub />
           </a>
           <a
+            href="mailto:dazhan@sas.upenn.edu"
+            className="text-xl sm:text-2xl text-foreground hover:text-opacity-80 transition"
+          >
+            <MdOutlineEmail/ >
+          </a>
+          <a
             href="/DavidZhanResumeSWE.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -39,16 +47,7 @@ const Contact = () => {
           >
             <FaAddressBook />
           </a>
-        </div>
-
-        {/* Contact Button */}
-        <div className="flex justify-center">
-          <a
-            href="mailto:dazhan@sas.upenn.edu"
-            className="px-6 py-3 rounded-md bg-foreground text-background font-medium hover:bg-opacity-80 transition"
-          >
-            Email Me
-          </a>
+          
         </div>
       </div>
     </div>

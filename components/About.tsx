@@ -1,13 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaAddressBook } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 
 const About = () => {
-    const [resumeType, setResumeType] = useState("");
+    // const [resumeType, setResumeType] = useState("");
 
     // useEffect(() => {
     //     // Randomly choose between SWE and DS resume (50/50 chance)

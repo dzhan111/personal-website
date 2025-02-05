@@ -74,10 +74,10 @@ const Navbar = () => {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{ opacity: 0, y: -20 }}  // Start slightly above
-                        animate={{ opacity: 1, y: 0 }}   // Move into view
-                        exit={{ opacity: 0, y: -20 }}    // Exit by moving up and fading out
-                        transition={{ duration: 0.4, ease: "easeInOut" }} // Smooth animation
+                        initial={{ opacity: 0, y: 0 }}  // Start slightly above
+                        animate={{ opacity: 1, y: 20 }}   // Move into view
+                        exit={{ opacity: 0, y: 0 }}    // Exit by moving up and fading out
+                        transition={{ duration: 0.3, ease: "easeInOut" }} // Smooth animation
                         className="lg:hidden"
                     >
                         <ul className="flex flex-col items-center space-y-4 py-4 bg-primary-foreground text-primary">

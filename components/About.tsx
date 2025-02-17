@@ -36,10 +36,7 @@ const About = () => {
                     Intern for a UMD gut health start-up called Ventoscity.
                     <br />
                     <br />
-                    At school, I work as a multivariable calculus TA and am a
-                    member of the Software team for Penn Aerial Robotics. I am
-                    also stepping into another role as a mobile developer for an
-                    up-and-coming NIL startup this December.
+                    This summer (2025) I will be located in San Franciso, working as a Software Engineering Intern at Samsara.
                     <br />
                     <br />
                     My interests include ML, SWE, and mobile dev. Outside of

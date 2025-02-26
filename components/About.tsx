@@ -32,11 +32,11 @@ const About = () => {
                     Minors in Math and Data Science.
                     <br />
                     <br />
-                    In the summer of 2024, I worked as a Software Engineering
+                    Last summer (2024), I worked as a Software Engineering
                     Intern for a UMD gut health start-up called Ventoscity.
                     <br />
                     <br />
-                    This summer (2025) I will be located in San Franciso, working as a Software Engineering Intern at Samsara.
+                    This summer (2025) I will be located in San Francisco, working as a Software Engineering Intern at Samsara.
                     <br />
                     <br />
                     My interests include ML, SWE, and mobile dev. Outside of

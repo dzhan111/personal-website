@@ -16,7 +16,7 @@ const Navbar = () => {
             <div className="container mx-auto flex justify-between items-center px-6">
                 {/* Logo or Brand */}
                 <div className="text-xl font-bold">
-                    <Link href="/">
+                    <Link href="/" onClick={toggleMenu}>
                         David Zhan
                     </Link>
                 </div>
@@ -49,7 +49,7 @@ const Navbar = () => {
                 <div className="hidden lg:flex justify-center items-center">
                     <ul className="flex space-x-8 py-2">
                         <li>
-                            <Link href="/" className="hover:text-secondary transition">
+                            <Link href="/about" className="hover:text-secondary transition">
                                 About
                             </Link>
                         </li>
@@ -83,7 +83,7 @@ const Navbar = () => {
                         <ul className="flex flex-col items-center space-y-4 py-4 bg-primary-foreground text-primary">
                             <li>
                                 <Link
-                                    href="/"
+                                    href="/about"
                                     className="hover:text-secondary transition"
                                     onClick={toggleMenu}
                                 >

@@ -36,7 +36,7 @@ const About = () => {
                     Intern for a UMD gut health start-up called Ventoscity.
                     <br />
                     <br />
-                    This summer (2025) I will be located in San Francisco, working as a Software Engineering Intern at Samsara.
+                    This summer ... tbd
                     <br />
                     <br />
                     My interests include ML, SWE, and mobile dev. Outside of

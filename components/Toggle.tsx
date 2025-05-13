@@ -15,6 +15,7 @@ const Toggle = () => {
     };
 
     if (!mounted) return null;
+    console.log(theme);
 
     return (
         <motion.button

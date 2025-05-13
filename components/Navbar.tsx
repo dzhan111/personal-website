@@ -11,30 +11,46 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     };
 
+    const navItems = [
+        { href: "/about", label: "About" },
+        { href: "/projects", label: "Projects" },
+        { href: "/contact", label: "Contact" },
+    ];
+
     return (
-        <nav className="bg-primary-foreground text-primary py-4 shadow-md">
-            <div className="container mx-auto flex justify-between items-center px-6">
+        <motion.nav
+            className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-foreground/10"
+            initial={{ y: -100 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.3 }}
+        >
+            <div className="container mx-auto flex justify-between items-center px-6 h-16">
                 {/* Logo or Brand */}
-                <div className="text-xl font-bold">
-                    <Link href="/" onClick={toggleMenu}>
+                <motion.div
+                    className="text-xl font-bold text-foreground"
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.2 }}
+                >
+                    <Link href="/" onClick={() => isOpen && toggleMenu()}>
                         David Zhan
                     </Link>
-                </div>
+                </motion.div>
 
                 {/* Hamburger Menu for Mobile */}
                 <button
-                    className="text-primary lg:hidden focus:outline-none"
+                    className="text-foreground lg:hidden focus:outline-none"
                     onClick={toggleMenu}
+                    aria-label="Toggle menu"
                 >
                     <motion.svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
-                        strokeWidth="2"
+                        strokeWidth="1.5"
                         stroke="currentColor"
                         className="w-6 h-6"
-                        animate={{ rotate: isOpen ? 180 : 0 }} // Rotate animation
-                        transition={{ duration: 0.3, ease:"easeInOut" }}
+                        animate={{ rotate: isOpen ? 180 : 0 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
                         <motion.path
                             strokeLinecap="round"
@@ -44,26 +60,22 @@ const Navbar = () => {
                     </motion.svg>
                 </button>
 
-
                 {/* Desktop Navigation Links */}
-                <div className="hidden lg:flex justify-center items-center">
-                    <ul className="flex space-x-8 py-2">
-                        <li>
-                            <Link href="/about" className="hover:text-secondary transition">
-                                About
+                <div className="hidden lg:flex items-center space-x-8">
+                    {navItems.map((item) => (
+                        <motion.div
+                            key={item.href}
+                            whileHover={{ scale: 1.05 }}
+                            transition={{ duration: 0.2 }}
+                        >
+                            <Link
+                                href={item.href}
+                                className="text-foreground/80 hover:text-foreground transition-colors"
+                            >
+                                {item.label}
                             </Link>
-                        </li>
-                        <li>
-                            <Link href="/projects" className="hover:text-secondary transition">
-                                Projects
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/contact" className="hover:text-secondary transition">
-                                Contact
-                            </Link>
-                        </li>
-                    </ul>
+                        </motion.div>
+                    ))}
                     <div className="pl-4">
                         <Toggle />
                     </div>
@@ -74,47 +86,36 @@ const Navbar = () => {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{ opacity: 0, y: 0 }}  // Start slightly above
-                        animate={{ opacity: 1, y: 20 }}   // Move into view
-                        exit={{ opacity: 0, y: 0 }}    // Exit by moving up and fading out
-                        transition={{ duration: 0.3, ease: "easeInOut" }} // Smooth animation
-                        className="lg:hidden"
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        className="lg:hidden border-t border-foreground/10"
                     >
-                        <ul className="flex flex-col items-center space-y-4 py-4 bg-primary-foreground text-primary">
-                            <li>
-                                <Link
-                                    href="/about"
-                                    className="hover:text-secondary transition"
-                                    onClick={toggleMenu}
+                        <div className="bg-background/80 backdrop-blur-md">
+                            {navItems.map((item) => (
+                                <motion.div
+                                    key={item.href}
+                                    whileHover={{ scale: 1.05 }}
+                                    className="px-6 py-3"
                                 >
-                                    About
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/projects"
-                                    className="hover:text-secondary transition"
-                                    onClick={toggleMenu}
-                                >
-                                    Projects
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/contact"
-                                    className="hover:text-secondary transition"
-                                    onClick={toggleMenu}
-                                >
-                                    Contact
-                                </Link>
-                            </li>
-                            <div className="pt-4">
+                                    <Link
+                                        href={item.href}
+                                        className="block text-foreground/80 hover:text-foreground transition-colors"
+                                        onClick={toggleMenu}
+                                    >
+                                        {item.label}
+                                    </Link>
+                                </motion.div>
+                            ))}
+                            <div className="px-6 py-3">
                                 <Toggle />
                             </div>
-                        </ul>
+                        </div>
                     </motion.div>
                 )}
             </AnimatePresence>
-        </nav>
+        </motion.nav>
     );
 };
 

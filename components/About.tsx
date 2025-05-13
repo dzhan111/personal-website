@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaAddressBook } from "react-icons/fa6";
@@ -16,55 +17,89 @@ const About = () => {
 
     const resumeLink = "/DavidZhanResumeSWE.pdf";
 
+    const fadeInUp = {
+        initial: { opacity: 0, y: 20 },
+        animate: { opacity: 1, y: 0 },
+        transition: { duration: 0.6 }
+    };
+
+    const stagger = {
+        animate: {
+            transition: {
+                staggerChildren: 0.1
+            }
+        }
+    };
 
     return (
-        <div
+        <motion.div
             id="about"
-            className="flex flex-col items-center justify-center h-screen bg-background text-foreground px-6"
+            className="min-h-screen bg-background text-foreground py-20 px-6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
         >
-            <div className="max-w-2xl text-left space-y-4 px-4 sm:px-6 md:px-8 lg:px-10">
-                <h1 className="text-4xl sm:text-5xl font-bold">
-                    Hi, I&apos;m David.
-                </h1>
-                <p className="text-base md:text-xl leading-relaxed py-6 sm:text-md">
-                    I am a junior at the University of Pennsylvania pursuing a
-                    BSE, as well as an MSE, in Computer Science along with
-                    Minors in Math and Data Science.
-                    <br />
-                    <br />
-                    Last summer (2024), I worked as a Software Engineering
-                    Intern for a UMD gut health start-up called Ventoscity.
-                    <br />
-                    <br />
-                    This summer ... tbd
-                    <br />
-                    <br />
-                    My interests include ML, SWE, and mobile dev. Outside of
-                    academics, I enjoy playing sports like soccer, basketball,
-                    and tennis. Check out my socials and resume below.
-                </p>
+            <motion.div 
+                className="max-w-3xl mx-auto space-y-8"
+                variants={stagger}
+                initial="initial"
+                animate="animate"
+            >
+                <motion.h1 
+                    className="text-4xl sm:text-5xl font-bold mt-20"
+                    variants={fadeInUp}
+                >
+                    About me
+                </motion.h1>
 
-                <div className="flex flex-wrap items-center gap-4">
+                <motion.div 
+                    className="space-y-6 text-lg leading-relaxed text-foreground/80"
+                    variants={fadeInUp}
+                >
+                    <p>
+                        I am a rising senior at the University of Pennsylvania pursuing a
+                        BSE, as well as an MSE, in Computer Science along with
+                        Minors in Math and Data Science.
+                    </p>
+
+                    <p>
+                        Last summer (2024), I worked as a Software Engineering
+                        Intern for a UMD gut health start-up called Ventoscity.
+                    </p>
+
+                    <p>
+                        This summer (2025), I will be working as a Software Engineering
+                        Intern for Samsara, an IoT company that provides a cloud infrastructure for larger 
+                        enterprises.
+                    </p>
+
+                    <p>
+                        My interests include ML, SWE, and mobile dev. Outside of
+                        academics, I enjoy playing sports like soccer, basketball,
+                        and tennis. Check out my socials and resume below.
+                    </p>
+                </motion.div>
+
+                <motion.div 
+                    className="flex flex-col sm:flex-row items-start sm:items-center gap-6 pt-4"
+                    variants={fadeInUp}
+                >
                     <Link href="/projects">
                         <button
-                            className="px-6 py-3 rounded-md bg-foreground text-background font-medium hover:bg-opacity-80 transition"
-                            onClick={() =>
-                                document
-                                    .getElementById("projects")
-                                    ?.scrollIntoView({ behavior: "smooth" })
-                            }
+                            className="px-6 py-3 rounded-lg bg-foreground text-background font-medium 
+                                hover:bg-opacity-80 transition-all transform hover:scale-105"
                         >
                             See my projects
                         </button>
                     </Link>
 
-                    {/* Social Media Icons */}
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-6">
                         <a
                             href="https://linkedin.com/in/davidzhan123"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-xl sm:text-2xl text-foreground hover:text-opacity-80 transition"
+                            className="text-2xl text-foreground hover:text-opacity-80 transition-all transform hover:scale-110"
+                            aria-label="LinkedIn Profile"
                         >
                             <FaLinkedin />
                         </a>
@@ -72,28 +107,31 @@ const About = () => {
                             href="https://github.com/dzhan111"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-xl sm:text-2xl text-foreground hover:text-opacity-80 transition"
+                            className="text-2xl text-foreground hover:text-opacity-80 transition-all transform hover:scale-110"
+                            aria-label="GitHub Profile"
                         >
                             <FaGithub />
                         </a>
                         <a
                             href="mailto:dazhan@sas.upenn.edu"
-                            className="text-xl sm:text-2xl text-foreground hover:text-opacity-80 transition"
+                            className="text-2xl text-foreground hover:text-opacity-80 transition-all transform hover:scale-110"
+                            aria-label="Email Contact"
                         >
                             <MdOutlineEmail />
                         </a>
                         <a
-                            href={resumeLink} // Example: "/resume.pdf" if placed in `public`
+                            href={resumeLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-xl sm:text-2xl text-foreground hover:text-opacity-80 transition"
+                            className="text-2xl text-foreground hover:text-opacity-80 transition-all transform hover:scale-110"
+                            aria-label="Resume"
                         >
                             <FaAddressBook />
                         </a>
                     </div>
-                </div>
-            </div>
-        </div>
+                </motion.div>
+            </motion.div>
+        </motion.div>
     );
 };
 

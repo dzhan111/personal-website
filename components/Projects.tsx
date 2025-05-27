@@ -6,12 +6,20 @@ import { MdOutlineLiveTv } from "react-icons/md";
 
 const projects = [
   {
-    title: "Fine-tuned Sentiment Analysis Model",
-    description: "LSTM Regressor trained on reviews from RateMyProfessor.com. Fine-tuned with data augmentation(synonym replacement, back-translation)",
+    title: "Linux Operating System",
+    description: "File management system and kernel scheduler coded in C. MSG for access.",
+    techStack: ["C"],
+    liveDemo: "https://youtu.be/ZiOawvAcxjk",
+  },
+  {
+    title: "Instalite",
+    description: "Instagram-like platform including post recommendations through adsorption algorithm, streaming via kafka, RAG for posts. Msg for access",
     githubLink: "https://github.com/dzhan111/Finetuning-Sentiment-Analysis-Models",
     liveDemo: "https://youtu.be/ZiOawvAcxjk",
-    techStack: ["numpy", "pandas", "scikit-learn"]
+    techStack: ["Typescript", "Express", "S3", "EC2", "Apache Spark", "Kafka", "ChromaDB", "Socket.io"]
   },
+  
+  
   {
     title: "Stephen AI Smith",
     description: "A real time autozooming + autocommentating camera man. Autozooms from any sports livestream link, commentates in voice of Stephen A. Smith",
@@ -21,7 +29,7 @@ const projects = [
   },
   {
     title: "DataLabeler",
-    description: "A dense captioning service for creating relevant and detailed captions for AI training data. (Enter any ID for live demo)",
+    description: "A dense captioning service for creating relevant and detailed captions for AI training data. ",
     githubLink: "https://github.com/dzhan111/DataLabeler",
     liveDemo: "https://data-labeler-ten.vercel.app/",
     techStack: ["React", "Tailwind", "FastAPI", "Supabase", "LemonFox.ai", "MEGA", "AWS", "Render"]

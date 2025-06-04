@@ -6,30 +6,42 @@ import { MdOutlineLiveTv } from "react-icons/md";
 
 const projects = [
   {
+    title: "Finetuned LSTMs for Sentiment Analysis",
+    description: "Finetuned LSTMs for sentiment analysis on the IMDB dataset. Write-up below.",
+    techStack: ["Python"],
+    liveDemo: "/CIS_5300_Final_Project.pdf",
+  },
+  {
+    title: "Trigram Viterbi POS tagger",
+    description: "Hidden Markov Model implementation of the viterbi algorithm for part of speech tagging. Write-up below.",
+    techStack: ["Python"],
+    liveDemo: "/CIS530_HW2.pdf",
+  },
+
+  {
     title: "Linux Operating System",
-    description: "File management system and kernel scheduler coded in C. MSG for access.",
+    description: "Complete file management system, command line interface, and kernel scheduler supporting foreground and background processes. Message for code access.",
     techStack: ["C"],
-    liveDemo: "https://youtu.be/ZiOawvAcxjk",
   },
   {
     title: "Instalite",
-    description: "Instagram-like platform including post recommendations through adsorption algorithm, streaming via kafka, RAG for posts. Msg for access",
+    description: "A lightweight social media platform with post recommendations through adsorption algorithm, streaming via kafka, RAG for posts. ",
     githubLink: "https://github.com/dzhan111/Finetuning-Sentiment-Analysis-Models",
     liveDemo: "https://youtu.be/ZiOawvAcxjk",
     techStack: ["Typescript", "Express", "S3", "EC2", "Apache Spark", "Kafka", "ChromaDB", "Socket.io"]
   },
-  
-  
+
+
   {
     title: "Stephen AI Smith",
-    description: "A real time autozooming + autocommentating camera man. Autozooms from any sports livestream link, commentates in voice of Stephen A. Smith",
+    description: "A real time autozooming + autocommentating bot. Takes input from any sports livestream link, commentates in voice of Stephen A. Smith",
     githubLink: "https://github.com/ezou626/cis5810finalproject",
     liveDemo: "https://youtu.be/lyDe1qwi74Q",
     techStack: ["React", "Tailwind", "Supabase", "FastAPI", "OpenAI", "Gemini", "OpenCV"]
   },
   {
     title: "DataLabeler",
-    description: "A dense captioning service for creating relevant and detailed captions for AI training data. ",
+    description: "A dense captioning service for creating relevant and detailed captions for creating contextually rich vision models. ",
     githubLink: "https://github.com/dzhan111/DataLabeler",
     liveDemo: "https://data-labeler-ten.vercel.app/",
     techStack: ["React", "Tailwind", "FastAPI", "Supabase", "LemonFox.ai", "MEGA", "AWS", "Render"]
@@ -51,14 +63,14 @@ const projects = [
 
   {
     title: "Weasel",
-    description: "A Spotify song recommendation platform for discovering new artists (msg for access)",
+    description: "A Spotify song recommendation platform for discovering new artists (message for access)",
     githubLink: "https://github.com/junhyunpark0126/weasel",
     liveDemo: "https://www.youtube.com/watch?v=ASowhSfDmdI",
     techStack: ["React", "Express", "MySQL", "AWS", "Neo4j"]
   },
   {
     title: "Instagram",
-    description: "A clone of Instagram, complete with posting, commenting, following, and liking functions",
+    description: "A mobile clone of Instagram, complete with posting, commenting, following, and liking.",
     githubLink: "https://github.com/dzhan111/instagram",
     techStack: ["Flutter", "Firebase", "Dart"]
   },
@@ -124,7 +136,7 @@ export default function Projects() {
                   className="text-primary hover:text-primary-foreground transition"
                 >
                   <MdOutlineLiveTv className="text-2xl" />
-                  
+
 
                 </a>
               )}

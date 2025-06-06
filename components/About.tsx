@@ -15,7 +15,7 @@ const About = () => {
     //     setResumeType(randomChoice);
     // }, []);
 
-    const resumeLink = "/DavidZhanResumeSWE.pdf";
+    const resumeLink = "/DavidZhanResume.pdf";
 
     const fadeInUp = {
         initial: { opacity: 0, y: 20 },
@@ -39,20 +39,20 @@ const About = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
         >
-            <motion.div 
+            <motion.div
                 className="max-w-3xl mx-auto space-y-8"
                 variants={stagger}
                 initial="initial"
                 animate="animate"
             >
-                <motion.h1 
+                <motion.h1
                     className="text-4xl sm:text-5xl font-bold mt-20"
                     variants={fadeInUp}
                 >
                     About me
                 </motion.h1>
 
-                <motion.div 
+                <motion.div
                     className="space-y-6 text-lg leading-relaxed text-foreground/80"
                     variants={fadeInUp}
                 >
@@ -68,9 +68,8 @@ const About = () => {
                     </p>
 
                     <p>
-                        This summer (2025), I will be working as a Software Engineering
-                        Intern for Samsara, an IoT company that provides a cloud infrastructure for larger 
-                        enterprises.
+                        This summer (2025), I will be on the AGI team at Amazon, working on building and
+                        optimizing supervised learning models.
                     </p>
 
                     <p>
@@ -80,7 +79,7 @@ const About = () => {
                     </p>
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                     className="flex flex-col sm:flex-row items-start sm:items-center gap-6 pt-4"
                     variants={fadeInUp}
                 >

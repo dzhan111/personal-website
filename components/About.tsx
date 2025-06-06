@@ -58,22 +58,22 @@ const About = () => {
                 >
                     <p>
                         I am a rising senior at the University of Pennsylvania pursuing a
-                        BSE, as well as an MSE, in Computer Science along with
+                        BSE + MSE in Computer Science along with
                         Minors in Math and Data Science.
                     </p>
 
                     <p>
-                        Last summer (2024), I worked as a Software Engineering
-                        Intern for a UMD gut health start-up called Ventoscity.
+                        Last summer (2024), I worked as a SWE internfor a UMD gut health start-up called Ventoscity,
+                        building their mobile application.
                     </p>
 
                     <p>
-                        This summer (2025), I will be on the AGI team at Amazon, working on building and
+                        This summer (2025), I will be an intern on the AGI team at Amazon, working on building and
                         optimizing supervised learning models.
                     </p>
 
                     <p>
-                        My interests include ML, SWE, and mobile dev. Outside of
+                        My interests include machine learning, web development, and solving problems. Outside of
                         academics, I enjoy playing sports like soccer, basketball,
                         and tennis. Check out my socials and resume below.
                     </p>

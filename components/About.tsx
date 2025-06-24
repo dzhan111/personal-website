@@ -68,8 +68,8 @@ const About = () => {
                     </p>
 
                     <p>
-                        This summer (2025), I will be an intern on the AGI team at Amazon, working on building and
-                        optimizing supervised learning models.
+                        This summer (2025), I will be an intern on the AGI team at Amazon, working on optimizing performance of Nova base models
+                        through pretraining data enhancement techniques, such as distillation, augmentation, and chain of thought prompting.
                     </p>
 
                     <p>

@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaAddressBook } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 
 const About = () => {
@@ -63,7 +62,7 @@ const About = () => {
                     </p>
 
                     <p>
-                        Last summer (2024), I worked as a SWE internfor a UMD gut health start-up called Ventoscity,
+                        Last summer (2024), I worked as a SWE intern for a UMD gut health start-up called Ventoscity,
                         building their mobile application.
                     </p>
 
@@ -73,62 +72,62 @@ const About = () => {
                     </p>
 
                     <p>
-                        My interests include machine learning, web development, and solving problems. Outside of
+                        My interests include machine learning, web development, and making fun apps. Outside of
                         academics, I enjoy playing sports like soccer, basketball,
                         and tennis. Check out my socials and resume below.
                     </p>
                 </motion.div>
 
-                <motion.div
-                    className="flex flex-col sm:flex-row items-start sm:items-center gap-6 pt-4"
-                    variants={fadeInUp}
+                    <motion.div
+                className="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-8 pt-4 max-w-3xl mx-auto"
+                variants={fadeInUp}
                 >
+                {/* Action buttons */}
+                <div className="flex flex-col sm:flex-row gap-4">
                     <Link href="/projects">
-                        <button
-                            className="px-6 py-3 rounded-lg bg-foreground text-background font-medium 
-                                hover:bg-opacity-80 transition-all transform hover:scale-105"
-                        >
-                            See my projects
-                        </button>
+                    <button className="px-6 py-3 rounded-lg bg-foreground text-background font-medium 
+                                        hover:bg-opacity-80 transition-all transform hover:scale-105">
+                        Projects
+                    </button>
                     </Link>
+                    <Link href={resumeLink}>
+                    <button className="px-6 py-3 rounded-lg bg-foreground text-background font-medium 
+                                        hover:bg-opacity-80 transition-all transform hover:scale-105">
+                        Resume
+                    </button>
+                    </Link>
+                </div>
 
-                    <div className="flex items-center gap-6">
-                        <a
-                            href="https://linkedin.com/in/davidzhan123"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-2xl text-foreground hover:text-opacity-80 transition-all transform hover:scale-110"
-                            aria-label="LinkedIn Profile"
-                        >
-                            <FaLinkedin />
-                        </a>
-                        <a
-                            href="https://github.com/dzhan111"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-2xl text-foreground hover:text-opacity-80 transition-all transform hover:scale-110"
-                            aria-label="GitHub Profile"
-                        >
-                            <FaGithub />
-                        </a>
-                        <a
-                            href="mailto:dazhan@sas.upenn.edu"
-                            className="text-2xl text-foreground hover:text-opacity-80 transition-all transform hover:scale-110"
-                            aria-label="Email Contact"
-                        >
-                            <MdOutlineEmail />
-                        </a>
-                        <a
-                            href={resumeLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-2xl text-foreground hover:text-opacity-80 transition-all transform hover:scale-110"
-                            aria-label="Resume"
-                        >
-                            <FaAddressBook />
-                        </a>
-                    </div>
+                {/* Social icons */}
+                <div className="flex gap-6">
+                    <a
+                    href="https://linkedin.com/in/davidzhan123"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-2xl text-foreground hover:text-opacity-80 transition-all transform hover:scale-110"
+                    aria-label="LinkedIn Profile"
+                    >
+                    <FaLinkedin />
+                    </a>
+                    <a
+                    href="https://github.com/dzhan111"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-2xl text-foreground hover:text-opacity-80 transition-all transform hover:scale-110"
+                    aria-label="GitHub Profile"
+                    >
+                    <FaGithub />
+                    </a>
+                    <a
+                    href="mailto:dazhan@sas.upenn.edu"
+                    className="text-2xl text-foreground hover:text-opacity-80 transition-all transform hover:scale-110"
+                    aria-label="Email Contact"
+                    >
+                    <MdOutlineEmail />
+                    </a>
+                </div>
                 </motion.div>
+
             </motion.div>
         </motion.div>
     );

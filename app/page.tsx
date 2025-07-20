@@ -1,5 +1,5 @@
 "use client"
-import Hero from "@/components/Hero";
+import About from "@/components/About";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
       exit={{ opacity: 0, y: -20 }}    // Exit by moving up and fading out
       transition={{ duration: 0.6, ease: "easeOut" }} // Smooth animation
     >
-      <Hero></Hero>
+      <About></About>
     </motion.div>
   );
 }

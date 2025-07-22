@@ -69,7 +69,7 @@ const About = () => {
                     <p>
                         This summer (2025), I am working as an MLE intern on the AGI team at Amazon. I am working to both build a data augmentation pipeline 
                         for continued pretraining of Nova base models and also use this pipeline to run experiments to determine optimal prompts and datamix ratios 
-                        that boost model performance benchmarks like MMLU and ARCC. 
+                        that boost model performance on reasoning benchmarks such as MMLU and ARCC. 
                     </p>
 
                     <p>

@@ -67,7 +67,7 @@ const About = () => {
                     </p>
 
                     <p>
-                        This summer (2025), I was an intern on the AGI team at Amazon, working on optimizing performance of Nova (Amazon's flagship LLM) base models
+                        This summer (2025), I was an intern on the AGI team at Amazon, working on optimizing performance of Nova (Amazon flagship LLM) base models
                         through pretraining data enhancement techniques, such as distillation, augmentation, and chain of thought prompting. I also designed and deployed
                         an end to end data augmentation pipeline for unlabeled data that decreased average inference time by a factor of 30.
                     </p>

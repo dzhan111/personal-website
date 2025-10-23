@@ -56,7 +56,7 @@ const About = () => {
                     variants={fadeInUp}
                 >
                     <p>
-                        I am a rising senior at the University of Pennsylvania pursuing a
+                        I am a student at the University of Pennsylvania pursuing a
                         BSE + MSE in Computer Science along with
                         Minors in Math and Data Science.
                     </p>
@@ -67,9 +67,15 @@ const About = () => {
                     </p>
 
                     <p>
+<<<<<<< HEAD
                         This summer (2025), I am working as an MLE intern on the AGI team at Amazon. I am working to both build a data augmentation pipeline 
                         for continued pretraining of Nova base models and also use this pipeline to run experiments to determine optimal prompts and datamix ratios 
                         that boost model performance on reasoning benchmarks such as MMLU and ARCC. 
+=======
+                        This summer (2025), I was an intern on the AGI team at Amazon, working on optimizing performance of Nova (Amazon's flagship LLM) base models
+                        through pretraining data enhancement techniques, such as distillation, augmentation, and chain of thought prompting. I also designed and deployed
+                        an end to end data augmentation pipeline for unlabeled data that decreased average inference time by a factor of 30.
+>>>>>>> b940bfa ( resume update)
                     </p>
 
                     <p>

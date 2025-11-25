@@ -40,7 +40,7 @@ const Contact = () => {
             <MdOutlineEmail/ >
           </a>
           <a
-            href="/DavidZhanResume.pdf"
+            href="/DavidZhanResumeSWE.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xl sm:text-2xl text-foreground hover:text-opacity-80 transition"

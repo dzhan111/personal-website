@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import localFont from "next/font/local";
@@ -34,6 +35,7 @@ export default function RootLayout({
           <Navbar />
           
           <main className="py-4">{children}</main>
+          <Analytics />
         </ThemeProvider>
         
       </body>

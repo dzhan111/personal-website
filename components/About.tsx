@@ -14,7 +14,7 @@ const About = () => {
     //     setResumeType(randomChoice);
     // }, []);
 
-    const resumeLink = "/DavidZhanResume.pdf";
+    const resumeLink = "/DavidZhanResumeML.pdf";
 
     const fadeInUp = {
         initial: { opacity: 0, y: 20 },
@@ -48,7 +48,7 @@ const About = () => {
                     className="text-4xl sm:text-5xl font-bold mt-20"
                     variants={fadeInUp}
                 >
-                    About me
+                    My name is David Zhan
                 </motion.h1>
 
                 <motion.div
@@ -63,17 +63,17 @@ const About = () => {
 
                     <p>
                         Last summer (2024), I worked as a SWE intern for a UMD gut health start-up called Ventoscity,
-                        building their mobile application.
+                        building their cross platform mobile application with flutter and swift.
                     </p>
 
                     <p>
-                        This summer (2025), I was an intern on the AGI team at Amazon, working on optimizing performance of Nova (Amazon flagship LLM) base models
+                        This summer (2025), I was an MLE intern on the AGI team at Amazon, working on optimizing performance of Nova (Amazon flagship LLM) base models
                         through pretraining data enhancement techniques, such as distillation, augmentation, and chain of thought prompting. I also designed and deployed
                         an end to end data augmentation pipeline for unlabeled data that decreased average inference time by a factor of 30.
                     </p>
 
                     <p>
-                        My interests include machine learning, web development, and making fun apps. Outside of
+                        My interests include machine learning and backend/infrastructure development. Outside of
                         academics, I enjoy playing sports like soccer, basketball,
                         and tennis. Check out my socials and resume below.
                     </p>

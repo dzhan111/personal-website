@@ -6,6 +6,19 @@ import { MdOutlineLiveTv } from "react-icons/md";
 
 const projects = [
   {
+    title: "Swift-edit",
+    description: "A reimplementation of the SwiftEdit paper with additional performance optimizations and architectural improvements.",
+    techStack: ["Python"],
+    githubLink: "https://github.com/dzhan111/swift-edit",
+    liveDemo: "/ESE_5460_Report.pdf",
+  },
+  {
+    title: "DavidSearch",
+    description: "Web server, distributed key–value store, and a “mini-Spark” engine. 1.28 million pages crawled, ranked, indexed.",
+    techStack: ["Java"],
+    liveDemo: "/CIS555_Final_Writeup.pdf",
+  },
+  {
     title: "Finetuned LSTMs for Sentiment Analysis",
     description: "Finetuned LSTMs for sentiment analysis on the IMDB dataset. Write-up below.",
     techStack: ["Python"],
@@ -25,7 +38,7 @@ const projects = [
   },
   {
     title: "Instalite",
-    description: "A lightweight social media platform with post recommendations through adsorption algorithm, streaming via kafka, RAG for posts. ",
+    description: "A lightweight social media platform with post recommendations through adsorption algorithm, streaming via kafka, search + RAG for posts. ",
     githubLink: "https://github.com/dzhan111/Finetuning-Sentiment-Analysis-Models",
     liveDemo: "https://youtu.be/ZiOawvAcxjk",
     techStack: ["Typescript", "Express", "S3", "EC2", "Apache Spark", "Kafka", "ChromaDB", "Socket.io"]

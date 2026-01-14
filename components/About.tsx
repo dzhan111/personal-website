@@ -48,7 +48,7 @@ const About = () => {
                     className="text-4xl sm:text-5xl font-bold mt-20"
                     variants={fadeInUp}
                 >
-                    My name is David Zhan
+                    I&apos;m David Zhan
                 </motion.h1>
 
                 <motion.div
@@ -56,7 +56,7 @@ const About = () => {
                     variants={fadeInUp}
                 >
                     <p>
-                        I am a student at the University of Pennsylvania pursuing a
+                        I&apos;m a student at the University of Pennsylvania pursuing a
                         BSE + MSE in Computer Science along with
                         Minors in Math and Data Science.
                     </p>
@@ -70,6 +70,10 @@ const About = () => {
                         Summer 2025, I was an MLE intern on the AGI team at Amazon, working on optimizing performance of Nova (Amazon flagship LLM) base models
                         through pretraining data enhancement techniques, such as distillation, augmentation, and chain of thought prompting. I also designed and deployed
                         an end to end data augmentation pipeline for unlabeled data that decreased average inference time by a factor of 30.
+                    </p>
+
+                    <p>
+                        Summer 2026, I will be working at Google, on the AI infrastructure team within Google Cloud.
                     </p>
 
                     <p>

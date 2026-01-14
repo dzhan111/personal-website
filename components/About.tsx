@@ -62,20 +62,20 @@ const About = () => {
                     </p>
 
                     <p>
-                        Last summer (2024), I worked as a SWE intern for a UMD gut health start-up called Ventoscity,
+                        Summer 2024, I worked as a SWE intern for a UMD gut health start-up called Ventoscity,
                         building their cross platform mobile application with flutter and swift.
                     </p>
 
                     <p>
-                        This summer (2025), I was an MLE intern on the AGI team at Amazon, working on optimizing performance of Nova (Amazon flagship LLM) base models
+                        Summer 2025, I was an MLE intern on the AGI team at Amazon, working on optimizing performance of Nova (Amazon flagship LLM) base models
                         through pretraining data enhancement techniques, such as distillation, augmentation, and chain of thought prompting. I also designed and deployed
                         an end to end data augmentation pipeline for unlabeled data that decreased average inference time by a factor of 30.
                     </p>
 
                     <p>
                         My interests include machine learning and backend/infrastructure development. Outside of
-                        academics, I enjoy playing sports like soccer, basketball,
-                        and tennis. Check out my socials and resume below.
+                        academics, I enjoy playing sports like soccer, basketball, and tennis. 
+                        Check out my socials and resume below.
                     </p>
                 </motion.div>
 

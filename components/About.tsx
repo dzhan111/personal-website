@@ -14,7 +14,7 @@ const About = () => {
     //     setResumeType(randomChoice);
     // }, []);
 
-    const resumeLink = "/DavidZhanResumeML.pdf";
+    const resumeLink = "/DavidZhanResume.pdf";
 
     const fadeInUp = {
         initial: { opacity: 0, y: 20 },
